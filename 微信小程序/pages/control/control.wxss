@@ -1,0 +1,49 @@
+.ESP32CAM {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20rpx;
+}
+
+.ESP32CAM image {
+  display: flex;
+  justify-content: center;
+  width: 300 px;
+  height: 300 px;
+  box-shadow: #77778a 0 0 10rpx;
+  border-radius: 15rpx;
+}
+.ESP32CAM_connect {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20rpx;
+}
+
+button {
+  display: inline-block;
+  border: 0;
+  outline: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.forward {
+  display: flex;
+  justify-content: center; /*水平居中*/
+  align-items: center;  /*垂直居中*/
+}
+.turn{
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+}
+.back{
+  display: flex;
+  justify-content: center; /*水平居中*/
+  align-items: center;  /*垂直居中*/
+}
+
+
+
+
+

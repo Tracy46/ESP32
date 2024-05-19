@@ -1,0 +1,37 @@
+<view class="ESP32CAM">
+  <image src="{{pic}}"></image>
+</view>
+<view class="ESP32CAM_connect">
+  <button type="{{CamStatus == 0 ? 'primary':'warn'}}" bindtap="ESP32CAM_control" plain="true" size="mini">{{ESP32CAM}}</button>
+  <button type="{{mqttStatus == 0 ? 'primary':'warn'}}" plain="true" bindtap="MQTTControl" size="mini">{{mqttControl_text}}</button>
+</view>
+
+<view class="ship_control">
+  <view class="forward">
+    <button bindtap="up" style="width:{{width}}rpx; height:{{height}}rpx;">
+      <image src="/images/control/up.png" style="width:100%; height:100%;" />
+    </button>
+  </view>
+  <view class="turn">
+    <view>
+      <button bindtap="left" style="width:{{width}}rpx; height:{{height}}rpx;">
+        <image src="/images/control/left.png" style="width:100%; height:100%;" />
+      </button>
+    </view>
+    <view>
+      <button bindtap="stop" style="width:{{width}}rpx; height:{{height}}rpx;">
+        <image src="/images/control/stop.png" style="width:100%; height:100%;" />
+      </button>
+    </view>
+    <view>
+      <button bindtap="right" style="width:{{width}}rpx; height:{{height}}rpx;">
+        <image src="/images/control/right.png" style="width:100%; height:100%;" />
+      </button>
+    </view>
+  </view>
+  <view class="back">
+    <button bindtap="down" style="width:{{width}}rpx; height:{{height}}rpx;">
+      <image src="/images/control/down.png" style="width:100%; height:100%;" />
+    </button>
+  </view>
+</view>

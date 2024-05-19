@@ -1,0 +1,11 @@
+<!--pages/help/help.wxml-->
+<view class="txt">
+  <text user-select="text">1.作者邮箱：mengyang3515@gmail.com
+    2.天气API接口：和风天气
+    3.MQTT服务器：阿里云
+    4.无人船运动控制命令：
+        前进：发送1；    左转：发送2；
+        停止：发送0；    右转：发送3；
+        后退：发送4
+  </text>
+</view>

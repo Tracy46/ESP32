@@ -1,0 +1,4 @@
+.txt{
+    margin-top: 20rpx;
+    margin-left: 30rpx;
+}

@@ -1,0 +1,37 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/control/control",
+        "pages/help/help"
+
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#0061b2",
+        "navigationBarTitleText": "探池取藕",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+      "list": [{
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home-active.png"
+      },
+      {
+        "pagePath": "pages/control/control",
+        "text": "控制",
+        "iconPath": "/images/control.png",
+        "selectedIconPath": "/images/control-active.png"
+      },
+      {
+        "pagePath": "pages/help/help",
+        "text": "帮助",
+        "iconPath": "/images/help.png",
+        "selectedIconPath": "/images/help-active.png"
+      }
+    ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

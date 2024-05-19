@@ -1,0 +1,142 @@
+<!-- 和风天气信息1 -->
+<view class="header">
+  <view class="one">
+    <text>空气质量：{{airText}}</text>
+    <text>{{date}}</text>
+    <text>武汉市，洪山区</text>
+  </view>
+  <view class="two">
+    <text>{{temp}}­°C</text>
+    <text>{{weather}}</text>
+  </view>
+  <view class="three">
+    <text>{{weatherAdvice}}</text>
+  </view>
+</view>
+<!-- 和风天气信息2 -->
+<view class="body-wrapper">
+  <view class="data">
+    <view class="data-logo">
+      <image src="/images/data/humi.png"></image>
+    </view>
+    <view class="data-text">
+      <view class="data-title">湿度</view>
+      <view class="data-value">{{humi}}%</view>
+    </view>
+  </view>
+  <view class="data">
+    <view class="data-logo">
+      <image src="/images/data/speed.png"></image>
+    </view>
+    <view class="data-text">
+      <view class="data-title">风速</view>
+      <view class="data-value">{{windSpeed}}m/s</view>
+    </view>
+  </view>
+  <view class="data">
+    <view class="data-logo">
+      <image src="/images/data/pressure.png"></image>
+    </view>
+    <view class="data-text">
+      <view class="data-title">气压</view>
+      <view class="data-value">{{pressure}}hpa</view>
+    </view>
+  </view>
+</view>
+
+<view class="body-wrapper">
+  <view class="data">
+    <view class="data-logo">
+      <image src="/images/data/PM10.png"></image>
+    </view>
+    <view class="data-text">
+      <view class="data-title">PM10</view>
+      <view class="data-value">{{PM10}}</view>
+    </view>
+  </view>
+  <view class="data">
+    <view class="data-logo">
+      <image src="/images/data/PM2.5.png"></image>
+    </view>
+    <view class="data-text">
+      <view class="data-title">PM2.5</view>
+      <view class="data-value">{{PM25}}</view>
+    </view>
+  </view>
+  <view class="data">
+    <view class="data-logo">
+      <image src="/images/data/no2.png"></image>
+    </view>
+    <view class="data-text">
+      <view class="data-title">NO2</view>
+      <view class="data-value">{{NO2}}</view>
+    </view>
+  </view>
+</view>
+
+<view class="body-wrapper">
+  <view class="data">
+    <view class="data-logo">
+      <image src="/images/data/so2.png"></image>
+    </view>
+    <view class="data-text">
+      <view class="data-title">SO2</view>
+      <view class="data-value">{{SO2}}</view>
+    </view>
+  </view>
+  <view class="data">
+    <view class="data-logo">
+      <image src="/images/data/co.png"></image>
+    </view>
+    <view class="data-text">
+      <view class="data-title">CO</view>
+      <view class="data-value">{{CO}}</view>
+    </view>
+  </view>
+  <view class="data">
+    <view class="data-logo">
+      <image src="/images/data/O3.png"></image>
+    </view>
+    <view class="data-text">
+      <view class="data-title">O3</view>
+      <view class="data-value">{{O3}}</view>
+    </view>
+  </view>
+</view>
+
+<!-- MQTT连接控制 -->
+<view class="connect_mqtt">
+  <button type="{{mqttStatus == 0 ? 'primary':'warn'}}" plain="true" bindtap="MQTTControl">{{mqttControl_text}}</button>
+</view>
+
+<!-- MPU6050 -->
+<view class="MPU6050">
+
+</view>
+<!-- 主板工作数据 -->
+<view class="table">
+  <view class="table-header">
+    <view class="table-cell">MPPT</view>
+    <view class="table-cell">电压</view>
+    <view class="table-cell">电流</view>
+    <view class="table-cell">功率</view>
+  </view>
+  <view class="table-row">
+    <view class="table-cell">Solar</view>
+    <view class="table-cell">{{S1}}V</view>
+    <view class="table-cell">{{Solar_I}}A</view>
+    <view class="table-cell">{{Solar_P}}W</view>
+  </view>
+  <view class="table-row">
+    <view class="table-cell">Charge</view>
+    <view class="table-cell">{{Charge_V}}V</view>
+    <view class="table-cell">{{Charge_I}}A</view>
+    <view class="table-cell">{{Charge_P}}W</view>
+  </view>
+  <view class="table-row">
+    <view class="table-cell">Load</view>
+    <view class="table-cell">{{Load_V}}V</view>
+    <view class="table-cell">{{Load_I}}A</view>
+    <view class="table-cell">{{Load_P}}W</view>
+  </view>
+</view>

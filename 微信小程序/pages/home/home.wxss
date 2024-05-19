@@ -1,0 +1,107 @@
+.header {
+  background-color: #3d7ef9;
+  color: white;
+  padding: 15rpx 30rpx;
+  border-radius: 20rpx;
+  margin: 12rpx;
+}
+
+.one {
+  display: flex;
+  justify-content: space-between;
+}
+
+.one text {
+  font-size: 26rpx;
+}
+
+.two {
+  display: flex;
+  justify-content: space-between;
+}
+
+.two text {
+  font-size: 52rpx;
+}
+
+.three {
+  display: flex;
+  justify-content: space-between;
+}
+
+.three text {
+  font-size: 26rpx;
+}
+
+.body-wrapper {
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.data-logo {
+  display: flex;
+  align-items: center;
+}
+
+.data-logo image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.data {
+  height: 100rpx;
+  width: 185rpx;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 35rpx;
+  padding: 0 18rpx;
+  box-shadow: #77778a 0 0 10rpx;
+}
+
+.data-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 按钮样式 */
+.connect_mqtt {
+  display: flex;
+  margin-left: 15rpx;
+  margin-top: 30rpx;
+}
+
+/* 表格样式 */
+.table {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(204, 204, 204);
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-left: 10px;
+  /* 左边距为 10px */
+  margin-right: 10px;
+  /* 右边距为 10px */
+}
+
+.table-header {
+  display: flex;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+
+.table-row {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.table-cell {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* MPU6050工作数据样式 */
